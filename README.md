@@ -6,6 +6,8 @@
 
 不過一旦出現過的通知，就會存在本地電腦中，不會再出現
 
+新增Discord機器人版本: 沒測試過，只是拿之前寫過的東西套一下照貼，有問題可開issue或pr
+
 ## Installation
 
 Following these steps to run the app:
@@ -36,10 +38,11 @@ Following these steps to run the app:
 
 4. Setting your cookie in `.env` file：
     - Please google if you don't know how to copy it
-    - The cookie should be like this
+    - The cookie should be like this format
 
     ```env
     cookie="connect.sid=[something]"
+    TOKEN="[discordtoken]" // only if you want to use discord version
     ```
 
 ## Usage
@@ -48,4 +51,10 @@ Use node.js (or bun) to run the program
 
 ```sh
 node index.js
+```
+
+or run discord bot version
+
+```sh
+node discordVer.js
 ```

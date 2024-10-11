@@ -60,6 +60,4 @@ const main = async () => {
 }
 
 await main();
-setInterval(async () => {
-    await main();
-}, 60 * 1000);
+setInterval(main, 60 * 1000);
