@@ -1,5 +1,11 @@
 # CK JUDGE BONUS 爬蟲通知程式
 
+## Description
+
+這個程式會在每次啟動時抓三天內的通知，並且運行時每分鐘檢查一次有沒有新的通知
+
+不過一旦出現過的通知，就會存在本地電腦中，不會再出現
+
 ## Installation
 
 Following these steps to run the app:
