@@ -1,10 +1,8 @@
-const Discord = require('discord.js');
-const dotenv = require('dotenv');
+import Discord from 'discord.js';
+import 'dotenv/config';
 const client = new Discord.Client({ intents: 131071, partials: ['CHANNEL', 'USER', 'GUILD_MEMBER', 'MESSAGE', 'REACTION', 'GUILD_SCHEDULED_EVENT'], allowedMentions: { parse: ['users'] } });
 
 const CHANNELID = 'put in your channel id';
-
-dotenv.config();
 
 client.on('ready', () => {
     console.log(`${client.user.tag}, 成員數: ${client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b)} ，伺服器數: ${client.guilds.cache.size}`);
